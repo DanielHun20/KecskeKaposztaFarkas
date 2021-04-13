@@ -1,7 +1,24 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+window.addEventListener("load",init);
 
+function $(nev){
+    return document.querySelectorAll(nev);
+}
 
+var kep=["kepek/kecske.png","kepek/kaposzta.png","kepek/farkas.png"];
+
+function init(){
+    for (var i = 0; i < $("aside p img").length; i++) {
+        $("aside p img")[i].addEventListener("mouseover",feladat5);
+        $("aside p img")[i].addEventListener("mouseout",feladat6);
+    }
+}
+
+function feladat5(){
+    this.classList.add("kiemel");
+    
+}
+
+function feladat6(){
+    this.classList.remove("kiemel");
+    
+}

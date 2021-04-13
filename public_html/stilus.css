@@ -68,3 +68,9 @@ main, header, aside, footer{
 #asbal{
     width: 170px;
 }
+
+.kiemel{
+    border: 2px solid red;
+    cursor: grab;
+    border-radius: 25px;
+}
